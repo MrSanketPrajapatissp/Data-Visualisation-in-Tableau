@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='worksheet'>
+      <format attr='font-family' value='Arial ' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='bar_chart_data' inline='true' name='federated.107ka241ywfx121227hln0k60myg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bar_chart_data' name='textscan.1nyryp00nyphri143f8q80ck7k2e'>
+            <connection class='textscan' directory='D:/ML/Tableau/Download data' filename='bar_chart_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1nyryp00nyphri143f8q80ck7k2e' name='bar_chart_data.csv' table='[bar_chart_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Brand' ordinal='0' />
+            <column datatype='integer' name='Cars Listings' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bar_chart_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[bar_chart_data.csv]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[bar_chart_data.csv_F4E9D1D8B1AA4BEE8C0B1453E0EFCD39]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cars Listings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cars Listings]</local-name>
+            <parent-name>[bar_chart_data.csv]</parent-name>
+            <remote-alias>Cars Listings</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[bar_chart_data.csv_F4E9D1D8B1AA4BEE8C0B1453E0EFCD39]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='bar_chart_data.csv' datatype='table' name='[__tableau_internal_object_id__].[bar_chart_data.csv_F4E9D1D8B1AA4BEE8C0B1453E0EFCD39]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/USER/AppData/Local/Temp/TableauTemp/#TableauTemp_1us1htz1477e1w1g3fea30k6nu2t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/14/2024 06:03:00 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Brand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Brand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Brand</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bar_chart_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[bar_chart_data.csv_F4E9D1D8B1AA4BEE8C0B1453E0EFCD39]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cars Listings</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cars Listings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cars Listings</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bar_chart_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[bar_chart_data.csv_F4E9D1D8B1AA4BEE8C0B1453E0EFCD39]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='bar_chart_data.csv' id='bar_chart_data.csv_F4E9D1D8B1AA4BEE8C0B1453E0EFCD39'>
+            <properties context=''>
+              <relation connection='textscan.1nyryp00nyphri143f8q80ck7k2e' name='bar_chart_data.csv' table='[bar_chart_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Brand' ordinal='0' />
+                  <column datatype='integer' name='Cars Listings' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Arial' fontsize='16'>Cars Listings By Brand</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bar_chart_data' name='federated.107ka241ywfx121227hln0k60myg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.107ka241ywfx121227hln0k60myg'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Cars Listings]' role='measure' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cars Listings]' derivation='Sum' name='[sum:Cars Listings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.107ka241ywfx121227hln0k60myg].[none:Brand:nk]' value='140' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.107ka241ywfx121227hln0k60myg].[sum:Cars Listings:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#292a7d' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.107ka241ywfx121227hln0k60myg].[sum:Cars Listings:qk]</rows>
+        <cols>[federated.107ka241ywfx121227hln0k60myg].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{F7A9D40A-FEF5-4EF2-995F-062140D0BD58}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.107ka241ywfx121227hln0k60myg].[none:Brand:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{503C85BE-0C95-4D09-AC19-57E399337714}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
